@@ -1,10 +1,8 @@
 {
   "name": "Закрывающий тег",
   "short_name": "Тег",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#121212",
   "description": "Цифровой дневник разработчика: путь от чистого листа до финального тега.",
   "icons": [
     {
