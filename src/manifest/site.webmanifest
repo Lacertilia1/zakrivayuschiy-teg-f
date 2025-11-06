@@ -2,7 +2,7 @@
   "name": "Закрывающий тег",
   "short_name": "Тег",
   "start_url": "./",
-  "display": "standalone",
+  "display": "browser",
   "description": "Цифровой дневник разработчика: путь от чистого листа до финального тега.",
   "icons": [
     {
