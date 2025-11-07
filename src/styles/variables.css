@@ -1,1 +1,248 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* Font families */
+
+  --font-family-main:
+    'Inter', 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+  --font-family-accent: 'Press Start 2P', 'Courier New', 'Courier', monospace;
+
+  /* Variable font weight & slant */
+
+  --inter-thin:               'wght' 100, 'slnt'   0;
+  --inter-thin-italic:        'wght' 100, 'slnt' -10;
+  --inter-extralight:         'wght' 200, 'slnt'   0;
+  --inter-extralight-italic:  'wght' 200, 'slnt' -10;
+  --inter-light:              'wght' 300, 'slnt'   0;
+  --inter-light-italic:       'wght' 300, 'slnt' -10;
+  --inter-regular:            'wght' 400, 'slnt'   0;
+  --inter-italic:             'wght' 400, 'slnt' -10;
+  --inter-medium:             'wght' 500, 'slnt'   0;
+  --inter-medium-italic:      'wght' 500, 'slnt' -10;
+  --inter-semibold:           'wght' 600, 'slnt'   0;
+  --inter-semibold-italic:    'wght' 600, 'slnt' -10;
+  --inter-bold:               'wght' 700, 'slnt'   0;
+  --inter-bold-italic:        'wght' 700, 'slnt' -10;
+  --inter-extrabold:          'wght' 800, 'slnt'   0;
+  --inter-extrabold-italic:   'wght' 800, 'slnt' -10;
+  --inter-black:              'wght' 900, 'slnt'   0;
+  --inter-black-italic:       'wght' 900, 'slnt' -10;
+}
+
+
+/* H1 */
+
+/*
+МОБИЛКА
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 49px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: bottom;
+text-transform: uppercase;
+
+ДЕСКТОП
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 65px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: bottom;
+text-transform: uppercase;
+
+
+*/
+
+/* Подзаголовок */
+
+/*
+
+МОБИЛКА
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+
+ДЕСКТОП
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 23px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+
+*/
+
+/* Заголовок карточки */
+
+/*
+МОБИЛКА
+
+font-family: Inter;
+font-weight: 715;
+font-style: Bold;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+ДЕСКТОП
+
+font-family: Inter;
+font-weight: 715;
+font-style: Black;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+*/
+
+/* Watermark */
+
+/*
+МОБИЛКА
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+
+ДЕСКТОП
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: uppercase;
+
+*/
+
+/* Текст карточки */
+
+/*
+МОБИЛКА
+
+font-family: Inter;
+font-weight: 410;
+font-style: Regular;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 21px;
+letter-spacing: 0%;
+
+ДЕСКТОП
+
+font-family: Inter;
+font-weight: 410;
+font-style: Regular;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 21px;
+letter-spacing: 0%;
+
+*/
+
+/* Кнопка */
+
+/*
+МОБИЛКА
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 90%;
+letter-spacing: 0%;
+
+ДЕСКТОП
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NON E;
+line-height: 90%;
+letter-spacing: 0%;
+
+*/
+
+/* КНОПКА ВНИЗУ */
+
+/*
+МОБИЛКА
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 90%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+
+ДЕСКТОП
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 90%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+*/
+
+
+/* Диалог */
+
+/*
+МОБИЛКА
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0%;
+text-transform: uppercase;
+
+ДЕСКТОП
+
+font-family: Press Start 2P;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0%;
+text-transform: uppercase;
+
+*/
