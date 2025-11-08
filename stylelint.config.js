@@ -1,7 +1,6 @@
 module.exports = {
   rules: {
     'color-no-invalid-hex': true,
-    'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
     'property-no-unknown': true,
     'declaration-block-no-duplicate-properties': true,
     'declaration-block-no-shorthand-property-overrides': true,
