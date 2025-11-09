@@ -6,22 +6,22 @@
     <title>Закрывающий тег</title>
 
     <!-- Фавиконки -->
-    <link rel="icon" type="image/svg+xml" href="./src/icons/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./src/favicons/favicon.svg" />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="./src/icons/favicon-96x96.png"
+      href="./src/favicons/favicon-96x96.png"
     />
     <link
       rel="shortcut icon"
-      href="./src/icons/favicon.ico"
+      href="./src/favicons/favicon.ico"
       type="image/x-icon"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./src/icons/apple-touch-icon.png"
+      href="./src/favicons/apple-touch-icon.png"
     />
 
     <!-- Манифест -->
@@ -36,22 +36,63 @@
   </head>
 
   <body class="page">
-    <header class="header">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <p class="header__subtitle">закрывающий тег</p>
+    <header class="header container">
+      <h1 class="header__logo">&lt;/HTML&gt;</h1>
+      <p class="header__title">закрывающий тег</p>
     </header>
 
-    <main>
-      <ul>
-        <li>
+    <main class="main container">
+      <ul class="cards-list">
+        <li class="cards-list__item">
           <article class="card">
-            <h2 class="card__title"></h2>
-            <img src="" alt="" />
-            <p></p>
-            <p></p>
-            <div>
-              <!-- svg -->
-              <button></button>
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+            <picture>
+              <source
+                srcset="
+                  ./src/images/avif/motorhome@x1.avif 1x,
+                  ./src/images/avif/motorhome@x2.avif 2x,
+                  ./src/images/avif/motorhome@x3.avif 3x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./src/images/webp/motorhome@x1.webp 1x,
+                  ./src/images/webp/motorhome@x2.webp 2x,
+                  ./src/images/webp/motorhome@x3.webp 3x
+                "
+                type="image/webp"
+              />
+              <img
+                src="./images/jpg/motorhome@x1.jpg"
+                srcset="
+                  ./src/images/jpg/motorhome@x1.jpg 1x,
+                  ./src/images/jpg/motorhome@x2.jpg 2x,
+                  ./src/images/jpg/motorhome@x3.jpg 3x
+                "
+                alt="Пиксельное изображение дома на колесах, стоящего в лесу ночью под звездным небом"
+                loading="lazy"
+              />
+            </picture>
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>Место для ваших воспоминаний о начале обучения.</p>
+              <div class="card__actions">
+                <button class="card__icon-button button">
+                  <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
+                    <use></use>
+                  </svg> -->
+                </button>
+                <button class="card__like-button button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
             </div>
           </article>
         </li>
