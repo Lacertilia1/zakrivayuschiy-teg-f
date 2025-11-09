@@ -36,7 +36,7 @@
   </head>
 
   <body class="page">
-    <header class="header container">
+    <header class="header container bg-container">
       <h1 class="header__logo">&lt;/HTML&gt;</h1>
       <p class="header__title">закрывающий тег</p>
     </header>
@@ -48,48 +48,626 @@
             <h2 class="card__title">
               Фритрек и нулевой спринт: Подготовка к работе
             </h2>
-            <picture>
-              <source
-                srcset="
-                  ./src/images/avif/motorhome@x1.avif 1x,
-                  ./src/images/avif/motorhome@x2.avif 2x,
-                  ./src/images/avif/motorhome@x3.avif 3x
-                "
-                type="image/avif"
-              />
-              <source
-                srcset="
-                  ./src/images/webp/motorhome@x1.webp 1x,
-                  ./src/images/webp/motorhome@x2.webp 2x,
-                  ./src/images/webp/motorhome@x3.webp 3x
-                "
-                type="image/webp"
-              />
-              <img
-                src="./images/jpg/motorhome@x1.jpg"
-                srcset="
-                  ./src/images/jpg/motorhome@x1.jpg 1x,
-                  ./src/images/jpg/motorhome@x2.jpg 2x,
-                  ./src/images/jpg/motorhome@x3.jpg 3x
-                "
-                alt="Пиксельное изображение дома на колесах, стоящего в лесу ночью под звездным небом"
-                loading="lazy"
-              />
-            </picture>
+
+            <div class="card__media">
+              <picture class="card__image">
+                <source
+                  srcset="
+                    ./src/images/avif/laptop@x1.avif 1x,
+                    ./src/images/avif/laptop@x2.avif 2x,
+                    ./src/images/avif/laptop@x3.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./src/images/webp/laptop@x1.webp 1x,
+                    ./src/images/webp/laptop@x2.webp 2x,
+                    ./src/images/webp/laptop@x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/jpg/laptop@x1.jpg"
+                  srcset="
+                    ./src/images/jpg/laptop@x1.jpg 1x,
+                    ./src/images/jpg/laptop@x2.jpg 2x,
+                    ./src/images/jpg/laptop@x3.jpg 3x
+                  "
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
+              <span class="card__watermark">Начало</span>
+            </div>
+
             <div class="card__content">
               <p>
                 Это было самое начало пути. На этом этапе важно было
                 проникнуться основами и настроиться на учёбу. И, возможно,
                 подумать, как новые знания могут повлиять на ваше будущее.
               </p>
-              <p>Место для ваших воспоминаний о начале обучения.</p>
+              <p>Я помню, как впервые открыл курс: было немного волнительно, но одновременно интересно. Появилось ощущение нового начала, чистого листа перед собой. Я пытался настроиться на учебу, представить, какие навыки смогу освоить, и подумать, как это изменит мои возможности в будущем. В голове мелькали мысли о том, что предстоит много нового, но именно это и заряжало энергией.</p>
               <div class="card__actions">
-                <button class="card__icon-button button">
-                  <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
-                    <use></use>
-                  </svg> -->
+                <button class="card__icon-button button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="like-icon"
+                    fill="none"
+                    viewBox="0 0 39 36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                    />
+                  </svg>
                 </button>
-                <button class="card__like-button button">
+                <button class="card__like-button button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="cards-list__item">
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+
+            <div class="card__media">
+              <picture class="card__image">
+                <source
+                  srcset="
+                    ./src/images/avif/page@x1.avif 1x,
+                    ./src/images/avif/page@x2.avif 2x,
+                    ./src/images/avif/page@x3.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./src/images/webp/page@x1.webp 1x,
+                    ./src/images/webp/page@x2.webp 2x,
+                    ./src/images/webp/page@x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/jpg/page@x1.jpg"
+                  srcset="
+                    ./src/images/jpg/page@x1.jpg 1x,
+                    ./src/images/jpg/page@x2.jpg 2x,
+                    ./src/images/jpg/page@x3.jpg 3x
+                  "
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
+              <span class="card__watermark">Фокус</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>На старте первого спринта я ощущал лёгкое волнение и сомнения. Страх перед пустой страницей или незнакомой задачей мешал начать, но одновременно это было как вызов самому себе. Я пытался сфокусироваться на маленьких шагах, чтобы понять, что даже простое действие — уже движение вперёд.</p>
+              <div class="card__actions">
+                <button class="card__icon-button button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="like-icon"
+                    fill="none"
+                    viewBox="0 0 39 36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="cards-list__item">
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+
+            <div class="card__media">
+              <picture class="card__image">
+                <source
+                  srcset="
+                    ./src/images/avif/thinking@x1.avif 1x,
+                    ./src/images/avif/thinking@x2.avif 2x,
+                    ./src/images/avif/thinking@x3.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./src/images/webp/thinking@x1.webp 1x,
+                    ./src/images/webp/thinking@x2.webp 2x,
+                    ./src/images/webp/thinking@x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/jpg/thinking@x1.jpg"
+                  srcset="
+                    ./src/images/jpg/thinking@x1.jpg 1x,
+                    ./src/images/jpg/thinking@x2.jpg 2x,
+                    ./src/images/jpg/thinking@x3.jpg 3x
+                  "
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
+              <span class="card__watermark">Сомнение</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>После первого проекта радость от завершения быстро сменялась тревогой: а что если что-то пойдёт не так? Я помню, как пытался найти баланс между радостью от результата и страхом перед ошибкой. Это был момент, когда я учился доверять себе и принимать, что ошибки — часть пути.</p>
+              <div class="card__actions">
+                <button class="card__icon-button button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="like-icon"
+                    fill="none"
+                    viewBox="0 0 39 36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="cards-list__item">
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+
+            <div class="card__media">
+              <picture class="card__image">
+                <source
+                  srcset="
+                    ./src/images/avif/perfection@x1.avif 1x,
+                    ./src/images/avif/perfection@x2.avif 2x,
+                    ./src/images/avif/perfection@x3.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./src/images/webp/perfection@x1.webp 1x,
+                    ./src/images/webp/perfection@x2.webp 2x,
+                    ./src/images/webp/perfection@x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/jpg/perfection@x1.jpg"
+                  srcset="
+                    ./src/images/jpg/perfection@x1.jpg 1x,
+                    ./src/images/jpg/perfection@x2.jpg 2x,
+                    ./src/images/jpg/perfection@x3.jpg 3x
+                  "
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
+              <span class="card__watermark">Идеал</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>Во втором спринте я пытался сделать всё идеально. Иногда это приводило к усталости, но постепенно я понимал, что идеал недостижим, и главное — прогресс, а не совершенство. Я вспоминал моменты, когда небольшие успехи давали больше уверенности, чем идеальные результаты.</p>
+              <div class="card__actions">
+                <button class="card__icon-button button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="like-icon"
+                    fill="none"
+                    viewBox="0 0 39 36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="cards-list__item">
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+
+            <div class="card__media">
+              <picture class="card__image">
+                <source
+                  srcset="
+                    ./src/images/avif/support@x1.avif 1x,
+                    ./src/images/avif/support@x2.avif 2x,
+                    ./src/images/avif/support@x3.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./src/images/webp/support@x1.webp 1x,
+                    ./src/images/webp/support@x2.webp 2x,
+                    ./src/images/webp/support@x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/jpg/support@x1.jpg"
+                  srcset="
+                    ./src/images/jpg/support@x1.jpg 1x,
+                    ./src/images/jpg/support@x2.jpg 2x,
+                    ./src/images/jpg/support@x3.jpg 3x
+                  "
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
+              <span class="card__watermark">Поддержка</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>В этот период я особенно ценил командную поддержку. Иногда казалось, что всё сложно, но знание, что рядом есть одногруппники и наставники, давало уверенность. Я помню, как делился сомнениями и радостями, и это делало путь менее одиноким.</p>
+              <div class="card__actions">
+                <button class="card__icon-button button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="like-icon"
+                    fill="none"
+                    viewBox="0 0 39 36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="cards-list__item">
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+
+            <div class="card__media">
+              <picture class="card__image">
+                <source
+                  srcset="
+                    ./src/images/avif/tired@x1.avif 1x,
+                    ./src/images/avif/tired@x2.avif 2x,
+                    ./src/images/avif/tired@x3.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./src/images/webp/tired@x1.webp 1x,
+                    ./src/images/webp/tired@x2.webp 2x,
+                    ./src/images/webp/tired@x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/jpg/tired@x1.jpg"
+                  srcset="
+                    ./src/images/jpg/tired@x1.jpg 1x,
+                    ./src/images/jpg/tired@x2.jpg 2x,
+                    ./src/images/jpg/tired@x3.jpg 3x
+                  "
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
+              <span class="card__watermark">Решение</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>Когда решения казались иссякшими, я учился смотреть на задачи под другим углом. Я пробовал новые подходы, анализировал ошибки и искал альтернативные пути. Это время научило меня гибкости и умению не зацикливаться на одном решении.</p>
+              <div class="card__actions">
+                <button class="card__icon-button button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="like-icon"
+                    fill="none"
+                    viewBox="0 0 39 36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="cards-list__item">
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+
+            <div class="card__media">
+              <picture class="card__image">
+                <source
+                  srcset="
+                    ./src/images/avif/labirint@x1.avif 1x,
+                    ./src/images/avif/labirint@x2.avif 2x,
+                    ./src/images/avif/labirint@x3.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./src/images/webp/labirint@x1.webp 1x,
+                    ./src/images/webp/labirint@x2.webp 2x,
+                    ./src/images/webp/labirint@x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/jpg/labirint@x1.jpg"
+                  srcset="
+                    ./src/images/jpg/labirint@x1.jpg 1x,
+                    ./src/images/jpg/labirint@x2.jpg 2x,
+                    ./src/images/jpg/labirint@x3.jpg 3x
+                  "
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
+              <span class="card__watermark">Концентрация</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>Бывали моменты усталости, когда казалось, что всё валится из рук. Я вспоминал, как важно было делать паузы, восстанавливать силы и снова возвращаться к учебе. Эти моменты научили меня концентрироваться и ценить каждый шаг, даже если прогресс медленный.</p>
+              <div class="card__actions">
+                <button class="card__icon-button button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="like-icon"
+                    fill="none"
+                    viewBox="0 0 39 36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="cards-list__item">
+          <article class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+
+            <div class="card__media">
+              <picture class="card__image">
+                <source
+                  srcset="
+                    ./src/images/avif/peak@x1.avif 1x,
+                    ./src/images/avif/peak@x2.avif 2x,
+                    ./src/images/avif/peak@x3.avif 3x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./src/images/webp/peak@x1.webp 1x,
+                    ./src/images/webp/peak@x2.webp 2x,
+                    ./src/images/webppeak1@x3.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/jpg/peak@x1.jpg"
+                  srcset="
+                    ./src/images/jpg/peak@x1.jpg 1x,
+                    ./src/images/jpg/peak@x2.jpg 2x,
+                    ./src/images/jpg/peak@x3.jpg 3x
+                  "
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
+              <span class="card__watermark">Прогресс</span>
+            </div>
+
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>Сейчас я оглядываюсь на пройденный путь и понимаю, сколько нового я узнал. Это чувство достижения и осознания процесса вдохновляет продолжать учиться. Я ощущаю уверенность, что могу развиваться дальше, и радость от того, что каждый шаг — часть моего личного роста.</p>
+              <div class="card__actions">
+                <button class="card__icon-button button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="like-icon"
+                    fill="none"
+                    viewBox="0 0 39 36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
+                    />
+                    <path
+                      fill="red"
+                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                    />
+                  </svg>
+                </button>
+                <button class="card__like-button button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -97,6 +675,13 @@
           </article>
         </li>
       </ul>
+
+      <button class="button button--save-memory" type="button">
+        <svg class="button__icon">
+          <use href="./src/images/svg/floppy.svg#floppy" />
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
 
     <script src="./scripts/like.js" defer></script>
