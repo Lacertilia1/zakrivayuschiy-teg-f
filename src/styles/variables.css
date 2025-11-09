@@ -17,37 +17,40 @@
     repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-  --background-color-container: #fff;
+  --background-color: #fff;
+
+  /* Colors */
+  --color-card-watermark-stroke: #fff;
 
   /* Layout */
 
   /*
-    Подробности линейной интерполяции (растущие размеры с viewport):
-    https://css-tricks.com/snippets/css/fluid-typography/
+    Используется линейная интерполяция размеров через clamp().
+    Подробнее: https://css-tricks.com/snippets/css/fluid-typography/
   */
 
-  /*
-    inline-size-container: линейный рост ширины блока
-    от 375px до 700px при ширине viewport 375-1440px,
-    минимальное значение применяется для экранов 375px,
-    максимум ограничен 700px
-  */
   --inline-size-container: clamp(
     375px,
     calc(375px + (700 - 375) * ((100vw - 375px) / (1440 - 375))),
     700px
   );
 
-  /*
-    padding-block-header: линейный рост вертикального паддинга шапки
-    от 122px до 130px при ширине viewport 375-1440px,
-    минимальное значение применяется для экранов 375px,
-    максимум ограничен 130px
-  */
   --padding-block-header: clamp(
     122px,
     calc(122px + (130 - 122) * ((100vw - 375px) / (1440 - 375))),
     130px
+  );
+
+  --inline-size-button-save-memory: clamp(
+    306px,
+    calc(306px + (335 - 306) * ((100vw - 375px) / (1440 - 375))),
+    335px
+  );
+
+  --size-button-icon: clamp(
+    21px,
+    calc(28px + (21 - 28) * ((100vw - 375px) / (1440 - 375))),
+    28px
   );
 }
 
@@ -128,8 +131,6 @@ leading-trim: NONE;
 line-height: 21px;
 
 */
-
-
 
 /* КНОПКА ВНИЗУ */
 
