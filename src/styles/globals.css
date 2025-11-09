@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -36,6 +40,19 @@ input {
 ul,
 ol {
   list-style: none;
+}
+
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .visually-hidden {
