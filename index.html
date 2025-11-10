@@ -3,29 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Учебный проект «Закрывающий тег»" />
     <title>Закрывающий тег</title>
 
     <!-- Фавиконки -->
-    <link rel="icon" type="image/svg+xml" href="./src/favicons/favicon.svg" />
     <link
       rel="icon"
       type="image/png"
-      sizes="96x96"
       href="./src/favicons/favicon-96x96.png"
+      sizes="96x96"
     />
-    <link
-      rel="shortcut icon"
-      href="./src/favicons/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" type="image/svg+xml" href="./src/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="./src/favicons/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="./src/favicons/apple-touch-icon.png"
     />
+    <meta name="apple-mobile-web-app-title" content="Тег" />
 
     <!-- Манифест -->
-    <link rel="manifest" href="./src/manifest/site.webmanifest" />
+    <link rel="manifest" href="./src/favicons/site.webmanifest" />
+
+    <!-- Предзагрузка шрифтов -->
+    <link
+      rel="preload"
+      href="./src/fonts/Inter-Variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./src/fonts/PressStart2P-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
 
     <!-- Стили -->
     <link rel="stylesheet" href="./src/styles/fonts.css" />
@@ -711,14 +725,28 @@
         </li>
       </ul>
 
-      <button class="button button--save-memory" type="button">
+      <button id="modal-open" class="button button--save-memory" type="button">
         <svg class="button__icon">
-          <use href="./src/images/svg/floppy.svg#floppy" />
+          <use href="./src/images/svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
+
+      <dialog id="modal" class="modal">
+        <div class="modal__content">
+          <svg class="modal__icon">
+            <use href="./src/images/svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="modal__text">Вставьте дискету, чтобы продолжить</span>
+        </div>
+
+        <button id="modal-close" class="modal__button button" type="button">
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
     </main>
 
     <script src="./scripts/like.js" defer></script>
+    <script src="./scripts/modal.js" defer></script>
   </body>
 </html>
