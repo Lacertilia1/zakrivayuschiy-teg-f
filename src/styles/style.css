@@ -11,7 +11,6 @@
 .container {
   display: grid;
   justify-items: center;
-  margin-inline: auto;
   inline-size: var(
     --inline-size-container,
     clamp(
@@ -20,6 +19,13 @@
       700px
     )
   );
+  margin-inline: auto;
+}
+
+@media (width <= 375px) {
+  .container {
+    inline-size: 100%;
+  }
 }
 
 .button {
@@ -40,7 +46,6 @@
 }
 
 .button--save-memory {
-  padding: 17px 20px;
   inline-size: var(
     --inline-size-button,
     clamp(
@@ -49,6 +54,19 @@
       335px
     )
   );
+  padding: 17px 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: max-content 1fr;
+  gap: 8px;
+}
+
+@media (width <= 375px) {
+
+  .button--save-memory {
+    grid-template-columns: 1fr;
+  }
 }
 
 .button__icon {
@@ -63,13 +81,16 @@
 }
 
 .like-icon {
-  height: 36px;
   inline-size: 39px;
+  height: 36px;
 }
 
 /* Page */
 
 .page {
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  padding-block: 100px;
   overflow-y: scroll;
   font-family: var(
     --font-family-main,
@@ -87,10 +108,7 @@
   );
   background-size: cover;
   background-attachment: fixed;
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--font-weight-text, 410);
-  padding-block: 100px;
 }
 
 /* Header */
@@ -191,11 +209,9 @@
   (text-stroke: 1px var(--color-card-watermark-stroke, #fff)) or
     (-webkit-text-stroke: 1px var(--color-card-watermark-stroke, #fff))
 ) {
-
   .card__watermark {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--color-card-watermark-stroke, #fff);
-    /* stylelint-disable-next-line property-no-unknown */
     text-stroke: 1px var(--color-card-watermark-stroke, #fff);
   }
 }
@@ -219,4 +235,52 @@
 
 .card__like-button {
   padding: 13px 37px;
+}
+
+/* Modal */
+
+.modal[open] {
+  inline-size: var(
+    --inline-size-modal,
+    clamp(
+      341px,
+      calc(341px + (353 - 341) * ((100vw - 375px) / (1440 - 375))),
+      353px
+    )
+  );
+  padding: 30px 40px;
+  display: grid;
+  gap: 30px;
+  font-family: var(
+    --font-family-accent,
+    'Press Start 2P',
+    'Courier New',
+    'Courier',
+    monospace
+  );
+  font-size: 14px;
+}
+
+.modal[open]::backdrop {
+  opacity: 0.75;
+  background-color: currentColor;
+}
+
+.modal[open] .modal__content {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 20px;
+}
+
+.modal[open] .modal__icon {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.modal[open] .modal__text {
+  line-height: 1.5;
+}
+
+.modal[open] .modal__button {
+  padding: 12px;
 }
