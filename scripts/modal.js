@@ -1,13 +1,8 @@
 const modal = document.getElementById('modal');
 const openButton = document.getElementById('modal-open');
-const closeButton = document.getElementById('modal-close');
 
 openButton.addEventListener('click', () => {
   modal.showModal();
-});
-
-closeButton.addEventListener('click', () => {
-  modal.close();
 });
 
 // Закрытие по клику вне окна
