@@ -161,6 +161,7 @@
 }
 
 @media (width <= 375px) {
+
   .main__save-button {
     grid-template-columns: 1fr;
   }
@@ -251,6 +252,7 @@
   (text-stroke: 1px var(--color-primary, #fff)) or
     (-webkit-text-stroke: 1px var(--color-primary, #fff))
 ) {
+
   .card__watermark {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--color-primary, #fff);
