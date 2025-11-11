@@ -381,7 +381,7 @@
     --padding-inline-modal,
     clamp(30px, calc(40px + (30 - 40) * ((100vw - 375px) / (1440 - 375))), 40px)
   );
-  padding-block: 29px;
+  padding-block: 28px;
   font-family: var(
     --font-family-accent,
     'Press Start 2P',
