@@ -381,7 +381,7 @@
     --padding-inline-modal,
     clamp(30px, calc(40px + (30 - 40) * ((100vw - 375px) / (1440 - 375))), 40px)
   );
-  padding-block: 30px;
+  padding-block: 29px;
   outline: 2px solid currentColor;
   outline-offset: -2px;
   font-family: var(
