@@ -26,10 +26,7 @@
   overflow: hidden;
   font-family: var(
     --font-family-accent,
-    'Press Start 2P',
-    'Courier New',
-    Courier,
-    monospace
+    'Press Start 2P', Copperplate, Papyrus, fantasy
   );
   font-size: 14px;
   line-height: 0.9;
@@ -84,11 +81,7 @@
   overflow-y: auto;
   font-family: var(
     --font-family-main,
-    'Inter Variable',
-    'Segoe UI',
-    'Helvetica Neue',
-    'Arial',
-    sans-serif
+    'Inter Variable', Arial, Verdana, sans-serif
   );
   background-color: #e7e7e7;
   background-image: var(
@@ -118,10 +111,7 @@
   );
   font-family: var(
     --font-family-accent,
-    'Press Start 2P',
-    'Courier New',
-    'Courier',
-    monospace
+    'Press Start 2P', Copperplate, Papyrus, fantasy
   );
   background-color: var(--color-primary, #fff);
 }
@@ -233,10 +223,7 @@
   opacity: 0.5;
   font-family: var(
     --font-family-accent,
-    'Press Start 2P',
-    'Courier New',
-    'Courier',
-    monospace
+    'Press Start 2P', Copperplate, Papyrus, fantasy
   );
   font-size: 14px;
   line-height: 1;
@@ -378,10 +365,7 @@
   padding-block: 28px;
   font-family: var(
     --font-family-accent,
-    'Press Start 2P',
-    'Courier New',
-    'Courier',
-    monospace
+    'Press Start 2P', Copperplate, Papyrus, fantasy
   );
   font-size: 14px;
   line-height: 1.5;
