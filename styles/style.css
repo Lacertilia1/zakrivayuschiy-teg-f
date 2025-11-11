@@ -26,7 +26,10 @@
   overflow: hidden;
   font-family: var(
     --font-family-accent,
-    'Press Start 2P', Copperplate, Papyrus, fantasy
+    'Press Start 2P',
+    Copperplate,
+    Papyrus,
+    fantasy
   );
   font-size: 14px;
   line-height: 0.9;
@@ -81,7 +84,10 @@
   overflow-y: auto;
   font-family: var(
     --font-family-main,
-    'Inter Variable', Arial, Verdana, sans-serif
+    'Inter Variable',
+    Arial,
+    Verdana,
+    sans-serif
   );
   background-color: #e7e7e7;
   background-image: var(
@@ -111,7 +117,10 @@
   );
   font-family: var(
     --font-family-accent,
-    'Press Start 2P', Copperplate, Papyrus, fantasy
+    'Press Start 2P',
+    Copperplate,
+    Papyrus,
+    fantasy
   );
   background-color: var(--color-primary, #fff);
 }
@@ -152,7 +161,6 @@
 }
 
 @media (width <= 375px) {
-
   .main__save-button {
     grid-template-columns: 1fr;
   }
@@ -223,7 +231,10 @@
   opacity: 0.5;
   font-family: var(
     --font-family-accent,
-    'Press Start 2P', Copperplate, Papyrus, fantasy
+    'Press Start 2P',
+    Copperplate,
+    Papyrus,
+    fantasy
   );
   font-size: 14px;
   line-height: 1;
@@ -240,7 +251,6 @@
   (text-stroke: 1px var(--color-primary, #fff)) or
     (-webkit-text-stroke: 1px var(--color-primary, #fff))
 ) {
-
   .card__watermark {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--color-primary, #fff);
@@ -365,7 +375,10 @@
   padding-block: 28px;
   font-family: var(
     --font-family-accent,
-    'Press Start 2P', Copperplate, Papyrus, fantasy
+    'Press Start 2P',
+    Copperplate,
+    Papyrus,
+    fantasy
   );
   font-size: 14px;
   line-height: 1.5;
@@ -390,5 +403,6 @@
 }
 
 .modal__button {
+  inline-size: 100%;
   padding: 12px;
 }
