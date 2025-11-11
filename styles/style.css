@@ -86,7 +86,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   padding-block: 100px;
-  overflow-y: scroll;
+  overflow-y: auto;
   font-family: var(
     --font-family-main,
     'Inter Variable',
@@ -122,6 +122,7 @@
     )
   );
   outline: 2px solid currentColor;
+  outline-offset: -2px;
   font-family: var(
     --font-family-accent,
     'Press Start 2P',
