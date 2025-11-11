@@ -200,37 +200,48 @@
   aspect-ratio: 1 / 1;
 }
 
-.card__image--beginning {
+.card__image--primary {
   filter: none;
 }
 
-.card__image--focus {
-  filter: grayscale(0.7);
+.card__image--joyful {
+  filter: brightness(120%);
 }
 
-.card__image--doubt {
-  filter: saturate(5);
+.card__image--calm {
+  filter: grayscale(50%);
 }
 
-.card__image--ideal {
-  filter: hue-rotate(30deg);
+.card__image--vivid {
+  filter: saturate(200%);
 }
 
-.card__image--support {
-  filter: invert(0.8);
+.card__image--mysterious {
+  filter: hue-rotate(180deg);
 }
 
-.card__image--solution {
-  filter: sepia(0.9);
+.card__image--warm {
+  filter: sepia(60%);
 }
 
-.card__image--progress {
-  filter: blur(10px);
+.card__image--cool {
+  filter: invert(30%) contrast(120%);
 }
 
-.card__image--rest {
-  filter: blur(1px) hue-rotate(90deg) sepia(20%) grayscale(50%) opacity(0.8)
-    saturate(240%);
+.card__image--dreamy {
+  filter: blur(1.5px) brightness(110%);
+}
+
+.card__image--bright {
+  filter: contrast(130%) saturate(150%);
+}
+
+.card__image--soft {
+  filter: blur(1px) sepia(20%);
+}
+
+.card__image--intense {
+  filter: brightness(150%) contrast(140%) saturate(180%);
 }
 
 .card__watermark {
