@@ -1,7 +1,3 @@
-/* этот скрипт использует такие имена классов:
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-*/
-
 const likeHeartArray = document.querySelectorAll('.like-icon');
 const likeButtonArray = document.querySelectorAll('.card__like-button');
 const iconButtonArray = document.querySelectorAll('.card__icon-button');
