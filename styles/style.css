@@ -197,38 +197,35 @@
 .card__media {
   position: relative;
   outline: 2px solid currentColor;
+  overflow: hidden;
   aspect-ratio: 1 / 1;
 }
 
-.card__image--beginning {
-  filter: none;
-}
-
-.card__image--focus {
+.card__image--filter_grayscale {
   filter: grayscale(70%);
 }
 
-.card__image--doubt {
+.card__image--filter_saturate {
   filter: saturate(500%);
 }
 
-.card__image--ideal {
+.card__image--filter_hue_rotate {
   filter: hue-rotate(30deg);
 }
 
-.card__image--support {
+.card__image--filter_invert {
   filter: invert(80%);
 }
 
-.card__image--solution {
+.card__image--filter_sepia {
   filter: sepia(90%);
 }
 
-.card__image--progress {
+.card__image--filter_blur {
   filter: blur(10px);
 }
 
-.card__image--rest {
+.card__image--filter_multiple {
   filter: blur(1px) hue-rotate(90deg) opacity(70%);
 }
 
