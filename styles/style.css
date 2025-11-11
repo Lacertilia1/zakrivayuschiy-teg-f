@@ -83,6 +83,8 @@
 /* Page */
 
 .page {
+  display: grid;
+  gap: 100px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   padding-block: 100px;
@@ -112,7 +114,7 @@
 .header {
   justify-items: center;
   gap: 20px;
-  margin-block-end: 100px;
+  border: 2px solid currentColor;
   padding-block: var(
     --padding-block-header,
     clamp(
@@ -121,8 +123,6 @@
       130px
     )
   );
-  outline: 2px solid currentColor;
-  outline-offset: -2px;
   font-family: var(
     --font-family-accent,
     'Press Start 2P',
@@ -179,7 +179,7 @@
 
 .cards-list {
   display: grid;
-  gap: 51px;
+  gap: 50px;
 }
 
 .card {
@@ -190,15 +190,18 @@
 }
 
 .card__title {
-  padding: 6px 10px;
+  border-bottom: 2px solid currentColor;
+  padding: 5px 10px;
   font-size: inherit;
   font-variation-settings: 'wght' var(--font-weight-title, 715);
 }
 
 .card__media {
   position: relative;
-  outline: 2px solid currentColor;
   overflow: hidden;
+}
+
+.card__image {
   aspect-ratio: 1 / 1;
 }
 
@@ -268,6 +271,7 @@
 .card__content {
   display: grid;
   gap: 25px;
+  border-block-start: 2px solid currentColor;
   padding: 25px;
 }
 
@@ -372,14 +376,12 @@
       353px
     )
   );
-  border: none;
+  border: 2px solid currentColor;
   padding-inline: var(
     --padding-inline-modal,
     clamp(30px, calc(40px + (30 - 40) * ((100vw - 375px) / (1440 - 375))), 40px)
   );
   padding-block: 29px;
-  outline: 2px solid currentColor;
-  outline-offset: -2px;
   font-family: var(
     --font-family-accent,
     'Press Start 2P',
