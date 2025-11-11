@@ -1,28 +1,4 @@
 :root {
-  /* Font families */
-  --font-family-main: 'Inter Variable', Arial, Verdana, sans-serif;
-  --font-family-accent: 'Press Start 2P', Copperplate, Papyrus, fantasy;
-
-  /* Font weights */
-  --font-weight-card-title: 715;
-  --font-weight-card-text: 410;
-
-  /* Font sizes */
-  --font-size-logo: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  --font-size-title: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-
-  /* Backgrounds */
-  --background-image-page:
-    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-
-  /* Colors */
-  --color-primary: #fff;
-  --color-secondary: #000;
-  --color-heart-contour: #000;
-  --animation-fill-color: #f00;
-
   /* Layout */
 
   /*
@@ -65,4 +41,28 @@
     calc(40px + (30 - 40) * ((100vw - 375px) / (1440 - 375))),
     40px
   );
+
+  /* Font families */
+  --font-family-main: 'Inter Variable', Arial, Verdana, sans-serif;
+  --font-family-accent: 'Press Start 2P', Copperplate, Papyrus, fantasy;
+
+  /* Font sizes */
+  --font-size-logo: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --font-size-title: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
+  /* Font weights */
+  --font-weight-card-title: 715;
+  --font-weight-card-text: 410;
+
+  /* Colors */
+  --color-primary: #fff;
+  --color-secondary: #000;
+  --color-heart-contour: #000;
+  --animation-fill-color: #f00;
+
+  /* Backgrounds */
+  --background-image-page:
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
 }
