@@ -14,13 +14,6 @@
   margin-inline: auto;
 }
 
-@media (width <= 375px) {
-
-  .container {
-    inline-size: 100%;
-  }
-}
-
 /* Button */
 
 .button {
