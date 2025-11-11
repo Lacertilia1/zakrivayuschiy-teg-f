@@ -307,6 +307,7 @@
 .like-icon {
   inline-size: 39px;
   block-size: 36px;
+  transform-origin: center;
 }
 
 /* Core */
