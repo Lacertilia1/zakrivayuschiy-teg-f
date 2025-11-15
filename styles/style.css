@@ -84,7 +84,7 @@
   overflow-y: auto;
   font-family: var(
     --font-family-main,
-    'Inter Variable',
+    Inter,
     Arial,
     Verdana,
     sans-serif
@@ -294,7 +294,7 @@
   padding-inline: 35px;
 }
 
-/* Heart icon */
+/* Like-icon */
 
 .like-icon {
   inline-size: 39px;
